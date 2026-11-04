@@ -13,7 +13,14 @@ public class LibraryService {
         }
         return availableCopies - 1;
     }
- 
+    public static String findMemberById(String[] members, String targetId) {
+    for (String member : members) {
+        if (member.equals(targetId)) {
+            return member;
+        }
+    }
+    return "Member not found";
+}
     public static void main(String[] args) {
         try {
             System.out.println("Remaining copies: " + issueBook(3, "Clean Code"));
