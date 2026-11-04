@@ -22,6 +22,7 @@ public class LibraryService {
     return "Member not found";
 }
     public static void main(String[] args) {
+        int a = 3;
         try {
             System.out.println("Remaining copies: " + issueBook(3, "Clean Code"));
             issueBook(0, "Clean Code");
